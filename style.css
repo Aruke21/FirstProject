@@ -89,6 +89,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .Container{
     padding: 100px;
 }
@@ -98,8 +99,6 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: lightgray;
-    padding-bottom: 120px;
-    padding-top: 180px;
 }
 
 .icon-boxes{
@@ -136,10 +135,17 @@ body{
     height: 42px;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .formWrapper{
     width: 100%;
     padding-top: 120px;
-    background: linear-gradient (grey 80% lightgray 80%);
+    background: linear-gradient(lightgray 80%, #E5E8ED 80%);
 }
 
 .form{
@@ -148,7 +154,7 @@ body{
     align-items: center;
     padding: 48px 60px;
     background-color: white;
-    height: 200px;
+    height: 180px;
     border-radius: 4px;
 }
 
@@ -157,6 +163,7 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    gap: 24px;
 }
 
 .formInput{
@@ -178,6 +185,8 @@ body{
 }
 .formInput label{
     padding: 10px 0;
+    width: 38px;
+    height: 21px;
 }
 
 .formBtn{
@@ -198,7 +207,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: #E5E8ED;
 }
 
 .servicesTitle{
