@@ -308,13 +308,11 @@ body{
 .portfolio{
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    margin: auto;
     background-color: lightgray;
     color: #1E212C;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width: 1240px;
-    height: 750px;
+    width: 1242px;
+    height: 752px;
 }
 
 .portfolioTitle{
@@ -390,5 +388,5 @@ body{
 .portfolioCard:hover{
     transition: 0.5s ease;
     background-color: white;
-    height: 500px
+    height: 450px;
 }
