@@ -390,3 +390,80 @@ body{
     background-color: white;
     height: 450px;
 }
+
+.clientWrapper{
+    width: 100%;
+    padding-top: 80px;
+    background-color: #F4F5F6;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1230px;
+    height: 194px;
+}
+
+.clientLogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    gap: 102px;
+    cursor: pointer;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    padding-left: 70px;
+    padding-right: 800px;
+    padding-block-end: 121px;
+    background-color: #F4F5F6;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.testimonialsCarousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 239px;
+    padding-top: 60px;
+}
+
+.reviewContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #1E212C;
+    padding-left: 70px;
+}
+
+.profile{
+    display: flex;
+    margin-inline-end: 400px;
+}
+
+.testimonialsInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1400px;
+    margin-block-start: -390px;
+}
