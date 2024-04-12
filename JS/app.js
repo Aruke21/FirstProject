@@ -49,15 +49,41 @@
 //     myFunc
 // });
 
-var mobileMenu = document.querySelector(".mobileMenu");
-var mobileMenuOpened = document.querySelector(".mobileMenuOpened");
 
-mobileMenu.addEventListener("click", function () {
-  if(!mobileMenuOpened.classList.contains("visible")){
-    mobileMenuOpened.classList.add("visible");
-    document.body.classList.add("overflowHidden");
-  } else{
-    mobileMenuOpened.classList.remove("visible");
-    document.body.classList.remove("overflowHidden");
+function checkColorAndDisplayMessage(){
+const userInput = prompt("Введите цвет (красный, желтый, зеленый):");
+let message;
+
+switch (userInput.toLowerCase()) {
+  case "красный":
+    message = "Стоп!";
+    break;
+  case "желтый":
+    message = "Подожди";
+    break;
+  case "зеленый":
+    message = "Иди";
+    break;
+  default:
+    message = "Неверный цвет";
+    break;
   }
-});
+
+alert(message);
+}
+
+checkColorAndDisplayMessage();
+
+
+//var mobileMenu = document.querySelector(".mobileMenu");
+//var mobileMenuOpened = document.querySelector(".mobileMenuOpened");
+
+//mobileMenu.addEventListener("click", function () {
+  //if(!mobileMenuOpened.classList.contains("visible")){
+    //mobileMenuOpened.classList.add("visible");
+    //document.body.classList.add("overflowHidden");
+  //} else{
+    //mobileMenuOpened.classList.remove("visible");
+    //document.body.classList.remove("overflowHidden");
+  //}
+//});
