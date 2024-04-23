@@ -50,40 +50,41 @@
 // });
 
 
-function checkColorAndDisplayMessage(){
-const userInput = prompt("Введите цвет (красный, желтый, зеленый):");
-let message;
+// function checkColorAndDisplayMessage(){
+// const userInput = prompt("Введите цвет (красный, желтый, зеленый):");
+// let message;
 
-switch (userInput.toLowerCase()) {
-  case "красный":
-    message = "Стоп!";
-    break;
-  case "желтый":
-    message = "Подожди";
-    break;
-  case "зеленый":
-    message = "Иди";
-    break;
-  default:
-    message = "Неверный цвет";
-    break;
-  }
+// switch (userInput.toLowerCase()) {
+//   case "красный":
+//     message = "Стоп!";
+//     break;
+//   case "желтый":
+//     message = "Подожди";
+//     break;
+//   case "зеленый":
+//     message = "Иди";
+//     break;
+//   default:
+//     message = "Неверный цвет";
+//     break;
+//   }
 
-alert(message);
-}
+// alert(message);
+// }
 
-checkColorAndDisplayMessage();
+// checkColorAndDisplayMessage();
 
 
-//var mobileMenu = document.querySelector(".mobileMenu");
-//var mobileMenuOpened = document.querySelector(".mobileMenuOpened");
+var mobileMenu = document.querySelector(".mobileMenu");
+var mobileMenuOpened = document.querySelector(".mobileMenuOpened");
+var mobileMenuClose = document.querySelector(".mobileMenuClose")
 
-//mobileMenu.addEventListener("click", function () {
-  //if(!mobileMenuOpened.classList.contains("visible")){
-    //mobileMenuOpened.classList.add("visible");
-    //document.body.classList.add("overflowHidden");
-  //} else{
-    //mobileMenuOpened.classList.remove("visible");
-    //document.body.classList.remove("overflowHidden");
-  //}
-//});
+mobileMenu.addEventListener("click", function () {
+  mobileMenuOpened.classList.add("visible");
+  document.body.classList.add("overflowHidden");
+  });
+
+mobileMenuClose.addEventListener("click", function(){
+  mobileMenuOpened.classList.remove("visible");
+  document.body.classList.remove("overflowHidden");
+});
