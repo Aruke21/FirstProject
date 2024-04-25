@@ -88,3 +88,39 @@ mobileMenuClose.addEventListener("click", function(){
   mobileMenuOpened.classList.remove("visible");
   document.body.classList.remove("overflowHidden");
 });
+
+
+
+var serviceItems = document.querySelector(".serviceItems")
+var serviceArr = [
+  {
+    img: "assets/ic-construction.png",
+    text: "Construction"
+  },
+  {
+    img: "assets/ic-plan.svg",
+    text: "Project Development"
+  },
+  {
+    img: "assets/Vector.svg",
+    text: "Interior Design"
+  },
+  {
+    img: "assets/ic-painting.svg",
+    text: "Repairs"
+  }
+]
+  serviceArr.forEach(function(item){
+  var service = document.createElement("div")
+  var img = document.createElement("img")
+  var text = document.createElement("p")
+
+  img.setAttribute("src", item.img)
+  text.textContent = item.text
+  service.append(img)
+  service.append(text)
+
+  service.classList.add("service")
+
+  serviceItems.append(service)
+});
